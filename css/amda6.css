@@ -1,0 +1,30 @@
+h1 {
+	color: red;
+}
+
+h3 {
+	color: #edb879;
+}
+
+ul li{ color: orange; }
+ol li{ color: #456DD1; }
+
+p {
+	color: green!important;
+}
+
+p {
+	color: red ;
+}
+
+.test {
+	color: red;
+}
+
+.test1 {
+	color: orange;
+}
+
+.test2 {
+	color: purple;
+}

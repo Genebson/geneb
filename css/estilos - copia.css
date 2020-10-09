@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*El color negro en HTML es para poder ver los logos hasta poder lograr
+ponerlos encima del header(subzero)*/
+
+html {
+	background-color: white;
+}
+
+/*Header*/
+
+header {
+	background-image: url("../css/header1.png");
+}
+
+header img {
+	border-bottom: 4px;
+}
+
+body {
+
+}
+
+body .blanco {
+	color: white;
+}
+
+/*Menú Navegador - Horizontal*/
+
+.button {
+	list-style-type: none;
+	margin-right: 0px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.iconoMenu img {
+	float: left;
+	padding: 28px 16px;
+	height: auto;
+	max-width: 75px;
+}
+
+.seccionesNav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Slider/Carousel Principal*/
+
+.sliderPrincipal {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+/*Body*/
+
+h1 {
+	color: orange;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2 {
+	color: #2c85bc;
+	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	color: #80391e;
+}
+
+h4 {
+	color: #edb879;
+}
+
+/*Search box*/
+
+.buscadorPrincipal #busqueda {
+	border: 0;
+	outline: none;
+	color: #8b7d77;
+}
+
+#busqueda {
+	position: relative;
+	width: 20%;
+	height: 60px;
+	border-radius: 25px;
+}
+
+.buscadorPrincipal {
+	text-align: center;
+}
+
+.btn-principal {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #2c85bc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-principal span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-principal span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.btn-principal:hover span {
+  padding-right: 15px;
+}
+
+.btn-principal:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.infoWeb {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 0px 10px;
+}
+
+.datosWeb {
+	clear: both;
+	display: block;
+}
+.venta {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	text-align: center;
+}
+
+.venta h2 {
+	font-weight: bold;
+}
+
+.computadoras {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	text-align: center;
+}
+
+.computadoras h3 {
+	background-color: #2c85bc;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	padding: 5px 15px 5px 10px;
+	display: inline-block;
+}
+.pcsGamer {
+	display: block;
+	clear: both;
+}
+
+.productosVariados {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+/*SECCIONES*/
+
+.menuVertical {
+	list-style-type: none;
+}
+
+ul ul {
+	position: absolute;
+	display: none;
+}
+
+ul ul li {
+	display: block;
+}
+
+/*INTEL*/
+
+.bannerIntel {
+	text-align: center;
+}
+/*Footer*/
+
+.blanco {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mailito {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #0099DD;
+	padding: 20px 0;
+}
+
+.footerDatos {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Clear floats after the columns */
+.footerColumna {
+  display: block;
+  clear: both;
+  text-align: center;
+}
