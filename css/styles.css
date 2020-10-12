@@ -111,6 +111,34 @@ h3 {
       background: #2c85bc;
       color: white; }
 
+btn-posi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: none;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px; }
+
+.fa-search {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s; }
+
 .buscadorPrincipal {
   text-align: center; }
   .buscadorPrincipal #busqueda {
@@ -228,7 +256,6 @@ h3 {
 .pcs {
   display: flex;
   justify-content: center;
-  padding-left: 130px;
   opacity: 0.5;
   transition: transform 0.2s, opacity 0.5s; }
   .pcs:hover {
@@ -463,3 +490,7 @@ section#productos {
 footer {
   background: #020024;
   background: linear-gradient(180deg, #020024 0%, #0a0a49 100%, #00d4ff 100%); }
+
+@media (min-width: 991px) {
+  .flexgrid h4 {
+    padding-right: 555px; } }
