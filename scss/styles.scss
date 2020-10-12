@@ -556,3 +556,15 @@ footer {
 		padding-right: 555px;
 	}
 }
+
+@media(min-width: 1280px) {
+	.flexgrid h4 {
+		padding-right: 205px;
+	}
+}
+
+@media(max-width: 767px) {
+	.flexgrid h4 {
+		padding-right: 395px;
+	}
+}
