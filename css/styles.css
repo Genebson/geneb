@@ -483,6 +483,8 @@ section#productos {
   flex: 25%;
   padding: 20px;
   font-family: "Roboto", sans-serif; }
+  .footerDatos a {
+    text-decoration: none; }
   .footerDatos p {
     font-size: 14px;
     margin: 0px 0px 10px; }
@@ -491,13 +493,18 @@ footer {
   background: #020024;
   background: linear-gradient(180deg, #020024 0%, #0a0a49 100%, #00d4ff 100%); }
 
+.myself {
+  margin-top: 205px; }
+
 @media (min-width: 991px) {
   .flexgrid h4 {
     padding-right: 555px; } }
 
 @media (min-width: 1280px) {
   .flexgrid h4 {
-    padding-right: 205px; } }
+    padding-right: 205px; }
+  .bg-blue h3 {
+    width: 95%; } }
 
 @media (max-width: 767px) {
   .flexgrid h4 {

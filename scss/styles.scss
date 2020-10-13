@@ -541,6 +541,9 @@ section#productos {
 	flex: 25%;
 	padding: 20px;
 	font-family: $font_family_1;
+	a {
+	text-decoration: none;
+	}
 	p {
 		font-size: 14px;
 		margin: 0px 0px 10px;
@@ -549,6 +552,14 @@ section#productos {
 footer {
 	background: rgb(2,0,36);
 	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(10,10,73,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.copyright {
+	
+}
+
+.myself {
+	margin-top: 205px;
 }
 
 @media(min-width: 991px) {
@@ -560,6 +571,9 @@ footer {
 @media(min-width: 1280px) {
 	.flexgrid h4 {
 		padding-right: 205px;
+	}
+	.bg-blue h3 {
+	width: 95%;
 	}
 }
 
