@@ -17,9 +17,6 @@
 /*Footer*/
 /* Clear floats after the columns */
 /*BLOCK+ELEMENTS*/
-.block--orange {
-  background-color: white; }
-
 nav {
   background-image: url("../css/header.png");
   background-size: cover;
@@ -38,6 +35,10 @@ header {
 
 body .blanco {
   color: white; }
+
+body p {
+  font-family: 'roboto' !important;
+  font-size: 14px !important; }
 
 .navbar .navbar-light .sm-light {
   z-index: 1; }
@@ -84,7 +85,8 @@ h1 {
 
 h2 {
   color: #2c85bc;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 24px; }
 
 h3 {
   color: #80391e; }
@@ -189,18 +191,15 @@ btn-posi {
 
 .fa-clock {
   font-size: 24px;
-  color: #2c85bc;
-  margin: 0px 170px 0px 0px; }
+  color: #2c85bc; }
 
 .fa-pencil-alt {
   font-size: 24px;
-  color: #2c85bc;
-  margin: 0px 170px 0px 0px; }
+  color: #2c85bc; }
 
 .fa-whatsapp-square {
-  font-size: 24px;
-  color: #2c85bc;
-  margin: 0px 170px 0px 0px; }
+  font-size: 30px;
+  color: #2c85bc; }
 
 .fa-facebook-square {
   font-size: 44px;
@@ -224,14 +223,6 @@ btn-posi {
   clear: both;
   display: block; }
 
-.venta {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  text-align: center; }
-  .venta h2 {
-    font-weight: bold; }
-
 .algo {
   font-family: "Roboto", sans-serif; }
 
@@ -247,7 +238,10 @@ btn-posi {
     font-size: 20px;
     padding: 5px 15px 5px 10px;
     display: inline-block;
-    position: sticky; }
+    position: sticky;
+    width: 25%;
+    padding: 10px;
+    text-align: center; }
 
 .bg-blue {
   font-family: "Roboto", sans-serif;
@@ -265,11 +259,6 @@ btn-posi {
 .pcsGamer {
   display: block;
   clear: both; }
-
-.productosVariados {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px; }
 
 #busquedaCategoria {
   position: relative;
@@ -464,20 +453,14 @@ section#productos {
   font-size: 12px;
   text-transform: uppercase; }
 
-.flexgrid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  .flexgrid h4 {
-    background-color: #2c85bc;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    padding: 5px 205px 5px 10px;
-    display: inline-block; }
-  .flexgrid p {
-    color: white; }
+h4 {
+  background-color: #2c85bc;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  padding: 5px 205px 5px 10px;
+  display: inline-block; }
 
 .footerDatos {
   flex: 25%;
@@ -487,7 +470,7 @@ section#productos {
     text-decoration: none; }
   .footerDatos p {
     font-size: 14px;
-    margin: 0px 0px 10px; }
+    color: white; }
 
 footer {
   background: #020024;
@@ -496,16 +479,30 @@ footer {
 .myself {
   margin-top: 205px; }
 
-@media (min-width: 991px) {
-  .flexgrid h4 {
-    padding-right: 555px; } }
-
 @media (min-width: 1280px) {
-  .flexgrid h4 {
-    padding-right: 205px; }
-  .bg-blue h3 {
+  .bg-blue {
     width: 95%; } }
 
-@media (max-width: 767px) {
-  .flexgrid h4 {
-    padding-right: 395px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 768px) {
+  .pcs {
+    margin-top: 13px; }
+  .bg-blue {
+    display: flex;
+    justify-content: center; }
+  .container {
+    width: 1170px; } }
+
+@media (min-width: 575px) {
+  h3 {
+    width: 100%; }
+  h4 {
+    width: 105%; }
+  .pcs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px; } }
