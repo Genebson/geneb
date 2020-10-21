@@ -1,7 +1,7 @@
 {
-  "name": "root-copia",
+  "name": "GENEB",
   "version": "1.0.0",
-  "description": "",
+  "description": "Geneb Computación donde comprar PCs armadas, componentes y demás, es posible.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
 "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
-  "author": "",
+  "author": "Jorge Mauricio Genebrieres",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.14.1",
