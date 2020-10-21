@@ -112,7 +112,17 @@ h2 {
 	font-size: 24px;
 }
 h3 {
-	color: $color_4;
+		background-color: $background_color_2;
+		color: $color_1;
+		font-family: $font_family_1;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 5px 15px 5px 10px;
+		display: inline-block;
+		position: sticky;
+		width: 25%;
+		padding: 10px;
+		text-align: center;
 }
 
 .btn-principal1 {
@@ -261,24 +271,6 @@ btn-posi {
 .algo {
 	font-family: $font_family_1;
 }
-.computadoras {
-	float: left;
-	width: 25%;
-	padding: 10px;
-	text-align: center;
-	h3 {
-		background-color: $background_color_2;
-		color: $color_1;
-		font-family: $font_family_1;
-		font-size: 20px;
-		padding: 5px 15px 5px 10px;
-		display: inline-block;
-		position: sticky;
-		width: 25%;
-		padding: 10px;
-		text-align: center;
-	}
-}
 
 .bg-blue {
 	font-family: $font_family_1;
@@ -410,15 +402,15 @@ section#productos {
 	margin-top: 1rem;
 	a {
 		text-decoration: none;
+		text-align: left;
 	}
 }
 .menu-item {
 	list-style: none;
-	border-top: 1px solid var(--dark-blue);
 	overflow: hidden;
 	&:target {
 		.menu-item__sub {
-			max-height: 10em;
+			max-height: 20em;
 		}
 	}
 }
@@ -553,7 +545,7 @@ footer {
 
 @media(min-width: 768px) {
 	.pcs {
-	margin-top: 14px;
+	margin-top: 13px;
 	}
 	.bg-blue {
 		display: flex;
@@ -579,4 +571,23 @@ footer {
   	margin-right: auto;
 	margin-top: 4px;
 	}
+}
+
+.col-md-3{
+  display: inline-block;
+  margin-left:-4px;
+}
+.col-md-3 img{
+  width:100%;
+  height:auto;
+}
+body .carousel-indicators li{
+  background-color:red;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
 }
