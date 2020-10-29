@@ -51,133 +51,167 @@
 	</nav>
 
 <!-- Formulario Contacto -->
-	<fieldset>
-	<p>
-		Completá el siguiente formulario y contactate...
-	</p>
+<section class="formulario-contacto">
+    <div class="container inverse pt-20 pb-20">
+        <div class="row">
+            <div class="col-md-12">
+                <p></p>
+                <form method="post" class="reply" id="contacto" action="../pages/thankyou.html">
+                    <fieldset>
+	                    <div class="row">
+	                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	                            <label>Nombre y Apellido</label>
+	                            <input class="form-control" id="nombre" name="nombre" type="text" value="" required="">
+	                        </div>
+	                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		                        <label>E-mail</label>
+		                        <input class="form-control" type="email" id="email" name="email" value="" required="">
+	                        </div>
+	                    </div>
+	                    <div class="row">
+	                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                            <label>Teléfono</label>
+	                            <input class="form-control" id="telefono" name="telefono" type="text" value="" required="">
+	                        </div>
+	                    </div>
+	                    <div class="row">
+	                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                            <label>Mensaje</label>
+	                            <textarea class="form-control" id="text" name="text" rows="3" cols="40" required=""></textarea>
+	                        </div>
+	                    </div>
+                    </fieldset>
+                        <input type="submit" class="mt-20 btn-categoria btn-default">
+                </form>
+            </div>
+        </div>
+    </div>    
+</section>
 
-	<form action="thankyou.html" method="post" name="formulario" enctype="application/x-www-form-urlencoded">
-		
-		<label for="Nombre">Nombre:<input type="text" name="name" size="40"></label><br><br>
-		<label for="Nombre">Apellido:<input type="text" name="name" size="40"></label><br><br>
-		<label for="Email">E-mail<input type="text" name="name" size="40"></label><br><br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="toptop col-md-4">
+                <h2><i><b><i class="fa fa-users"></i> Nosotros</b></i></h2>
+                <p>En Geneb buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita.</p>
+                <h2><i><b><i class="fa fa-envelope"></i> Contactate</b></i></h2>
+                <p><b>E-mail: </b>ventas@geneb.com.ar</a></p>
+                <p><b>Atención telefónica: </b>(011) 7700-0048</p>
+                <p><b>Whatsapp: </b>+54 9 11-2391-8789</a></p>
+                <p><b>Horario de atención: </b>Lunes a viernes de 10 a 19 hs. Sábados de 10 a 13 hs.</p>
+                <p><b>Envíos: </b>envios@gezatek.com.ar</p>
+                <p><b>Trámite Garantía: </b>www.geneb.com.ar/rma</p>
+                <p><b>Soporte: </b>rma@geneb.com.ar</p>
+                <p><b>Ventas Corporativas: </b>ventascorporativas@geneb.com.ar</p>
+            </div>
+            <div class="toptop col-md-8">
+                <h6>Comprá Online y retirá en nuestro punto de entrega en <i><b>Devoto!</b></i></h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7176201321076!2d-58.434404684770854!3d-34.586010980464096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses-419!2sar!4v1603835269971!5m2!1ses-419!2sar" width="751" height="372" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p class="text-right"><b><i class="fa fa-arrow-up"></i> Devoto</b><br>Campana 3500 / (011) 7700-0048<br>ventas@geneb.com.ar</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-			<select name="estadocivil">
-		  	<option value="S" name="single">Soltero/a</option>
-		  	<option value="C" name="married">Casado/a</option>
-		  	<option value="SE" name="separated">Separado/a</option>
-		  	<option value="W" name="widowed">Viudo/a</option>
-		  	<option value="D" name="divorced">Divorciado/a</option>
-		  </select>
-
-		<p>¿Desea recibir el Newsletter?
-				<input type="checkbox" name="acepta" value="1">
-				</p>
-
-		<p>Comentarios</p>
-
-			<textarea cols="30" rows="4" name="consulta">
-			</textarea>
-
-		<p>
-		  <button type="reset">Limpiar Formulario</button>
-		  <button type="submit">Enviar Formulario</button>
-		</p>
-		</fieldset>
-	</form>
-<hr>
-<!-- footer -->
-<footer class="footerColumna">
 <div class="mailito">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col-sm-12 col-lg-12">
-					<form id="mailing" name="mailing" action="pages/thankyou.html">
-						<span class="blanco">
-							Recibí las mejores ofertas en tu e-mail
-						</span>
-			</div>			
-			<div class="col-sm-12 col-lg-12">
-							<input name="nombre" type="text" placeholder="Tu nombre" class="btn-mailito">
-							<input name="email" type="text" placeholder="Tu e-mail" class="btn-mailito">
-			</div>
-			<div class="col-sm-12 col-lg-12">
-							<input type="submit" name="Submit" value="Suscribite" class="btn-suscribite">
-			</div>				
-					</form>
-				</div>
-			</div>	
-		</div>	
-	</div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-12 col-lg-12">
+          <form id="mailing" name="mailing" action="#">
+            <span class="blanco"><i class="fa fa-envelope"></i>
+              Recibí las mejores ofertas en tu e-mail
+            </span>     
+              <input name="nombre" type="text" placeholder="Tu nombre" class="btn-mailito">
+              <input name="email" type="text" placeholder="Tu e-mail" class="btn-mailito">
+              <input type="submit" name="Submit" value="Suscribite" class="btn-suscribite">
+      </div>        
+          </form>
+        </div>
+      </div>  
+    </div>  
+  </div>
 </div>
-<!-- INFO FOOTER -->
-<div class="flexgrid">
-	<div class="container-fluid">	
-		<div class="row">
-			<div class="col-sm-12 col-lg-4">
-					<div class=footerDatos>
-						<h4>
-						<b>Informacion</b>
-						</h4>
-						<p>Podes retirar tus productos en nuestra sucursal <b>DEVOTO</b>
-						<p>¿Dónde?</p>
-						<p>Campana 3500</p>
-						<p>(011) 3844-6545</p>
-						<p>Menú</p>
-						<a href="../index.html"><p>Inicio</p></a>
-						<a href="../pages/tienda.html"><p>Tienda</p></a>
-						<a href="../pages/quienessomos.html"><p>Quiénes Somos</p></a>
-						<a href="../pages/faq.html"><p>FAQ</p></a>
-						<a href="../pages/contacto.html"><p>Contacto y Sucursales</p></a>
-						<a href="../pages/politicasdeprivacidad.html"><p>Políticas de privacidad</p></a>
-					</div>
-			</div>
-			<div class="col-sm-12 col-lg-4">
-					<div class="footerDatos">
-						<h4>
-						<b>Nosotros</b>
-						</h4>
-						<p>En Geneb buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita</p>
-						<img src="../images/data-fiscal.gif">
-					</div>
-						
-			</div>
-			<div class="col-sm-12 col-lg-4">
-					<div class="footerDatos">
-						<h4>
-						<b>Contactate</b>
-						</h4>
-						<p>
-						<b>Email: </b> 
-						venta@geneb.com.ar
-						</p>
-						<p>
-						<b>Atención telefónica: </b>
-						(011) 1122-5544
-						</p>
-						<p>
-						<b>Whatsapp: </b>
-						+54 9 1155-4422
-						</p>
-						<p>
-						<b>Envios: </b>
-						envios@geneb.com.ar
-						</p>
-						<p>
-						<b>Soporte: </b>
-						rma@geneb.com.ar
-						</p>
-						<a href="https://www.facebook.com/CoderHouse/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a href="https://www.instagram.com/CoderHouse/" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href="https://api.whatsapp.com/send?phone=5491126250151&text=Hola%20CoderHouse%E2%98%BA.%20Quiero%20inscribirme%20en%20el%20curso%20de%20Desarrollo%20Web!%20%C2%BFC%C3%B3mo%20hago%20para%20ser%20parte?%20Saludos%20%F0%9F%91%8B." target="_blank"><i class="fab fa-whatsapp"></i></a>
-					</div>
-			</div>
-		</div>		
-	</div>
-</div>	
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class=footerDatos>
+              <h5>
+              <b>Informacion</b>
+              </h5>
+              <p>Podes retirar tus productos en nuestra sucursal <b>DEVOTO</b>
+              <p>¿Dónde?</p>
+              <p><i class="fas fa-home"></i> Campana 3500</p>
+              <p><i class="fas fa-phone-volume"></i> (011) 3844-6545</p>
+              <p><strong>Menú</strong></p>
+              <a href="../index.html"><p>Inicio</p></a>
+              <a href="../pages/tienda.html"><p>Tienda</p></a>
+              <a href="../pages/quienessomos.html"><p>Quiénes Somos</p></a>
+              <a href="../pages/faq.html"><p>FAQ</p></a>
+              <a href="../pages/contacto.html"><p>Contacto y Sucursales</p></a>
+              <a href="../pages/politicasdeprivacidad.html"><p>Políticas de privacidad</p></a>
+              <p><strong>2020 © Todos los derechos reservados</strong></p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="footerDatos">
+              <h5>
+              <b>Nosotros</b>
+              </h5>
+              <p>En Geneb buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita</p>
+              <a href="https://www.coderhouse.com/" target="_blank"><img src="../images/data-fiscal.gif"></a>
+            </div>
+              
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="footerDatos">
+              <h5>
+              <b>Contactate</b>
+              </h5>
+              <p>
+              <b>Email: </b> 
+              venta@geneb.com.ar
+              </p>
+              <p>
+              <b>Atención telefónica: </b>
+              (011) 1122-5544
+              </p>
+              <p>
+              <b>Whatsapp: </b>
+              +54 9 1155-4422
+              </p>
+              <p>
+              <b>Envios: </b>
+              envios@geneb.com.ar
+              </p>
+              <p>
+              <b>Soporte: </b>
+              rma@geneb.com.ar
+              </p>
+              <a href="https://www.facebook.com/CoderHouse/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/CoderHouse/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=5491126250151&text=Hola%20CoderHouse%E2%98%BA.%20Quiero%20inscribirme%20en%20el%20curso%20de%20Desarrollo%20Web!%20%C2%BFC%C3%B3mo%20hago%20para%20ser%20parte?%20Saludos%20%F0%9F%91%8B." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  <div class="myself">
+                    <a href="https://jorgemauriciogenebrieres.github.io/portfolio/" target="_blank"><p>By <strong>Jorge Mauricio Genebrieres</strong></p></a>
+                  </div>    
+            </div>
+        </div> 
+      </div>    
+    </div>
 </footer>
+
+<!-- JS -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/carouselproductos.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/preventscroll.js"></script>
 </body>
 </html>

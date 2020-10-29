@@ -109,7 +109,10 @@ body p {
 h1 {
   color: orange;
   text-align: center;
-  font-size: 50px; }
+  font-size: 40px; }
+
+.h1-margin {
+  margin-bottom: 25px; }
 
 h2 {
   color: #2c85bc;
@@ -131,7 +134,6 @@ h3 {
 
 h4 {
   text-align: center;
-  margin: 30px 0px 0px 0px;
   font-size: 23px; }
 
 h5 {
@@ -142,6 +144,21 @@ h5 {
   font-style: italic;
   padding: 5px 205px 5px 10px;
   display: inline-block; }
+
+h6 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px; }
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+.gracias {
+  margin-top: 250px; }
+
+.back-index {
+  text-decoration: none; }
 
 .btn-principal1 {
   position: relative;
@@ -194,17 +211,18 @@ btn-posi {
   transition: all 1s; }
 
 .buscadorPrincipal {
+  margin-top: 5px;
+  margin-bottom: 15px;
   text-align: center; }
   .buscadorPrincipal #busqueda {
-    border: 0;
+    border: solid 1px;
     outline: none;
-    color: #8b7d77; }
-
-#busqueda {
-  position: relative;
-  width: 20%;
-  height: 60px;
-  border-radius: 25px; }
+    color: #8b7d77;
+    position: relative;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 1.5px;
+    padding: 10px; }
 
 .btn-principal {
   display: inline-block;
@@ -214,7 +232,7 @@ btn-posi {
   color: #FFFFFF;
   text-align: center;
   font-size: 18px;
-  padding: 20px;
+  padding: 10px;
   width: 100px;
   transition: all 0.5s;
   cursor: pointer;
@@ -267,6 +285,14 @@ btn-posi {
   color: white;
   margin-left: 10px; }
 
+.fa-check {
+  color: green;
+  font-size: 100px;
+  margin-bottom: 50px; }
+
+a.back-index {
+  text-decoration: none; }
+
 .infoWeb {
   font-family: "Roboto", sans-serif;
   margin: 0px 0px 10px; }
@@ -316,19 +342,7 @@ btn-posi {
   padding: 9px 13px;
   height: 35px;
   cursor: pointer;
-  margin: -1px;
-  font-size: 12px;
-  text-transform: uppercase;
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #2c85bc;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 9px 13px;
-  height: 35px;
-  cursor: pointer;
-  margin: -1px;
+  margin: 1px;
   font-size: 12px;
   text-transform: uppercase; }
 
@@ -347,6 +361,11 @@ ul ul {
   max-width: 100%;
   margin-top: 100px; }
 
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
 .categoria {
   width: 260px;
   margin-top: 30px;
@@ -362,9 +381,17 @@ section#productos {
   margin-right: 100px;
   margin-top: 200px; }
 
-.hardware {
+.uno {
   display: flex;
-  justify-content: space-between; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cuatro {
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+  margin-left: 25px; }
 
 :root {
   --blue: #2c85bc;
@@ -434,9 +461,10 @@ section#productos {
       opacity: 1;
       transform: translatex(0); }
 
-.faqbanner {
-  width: 100%;
-  margin-top: 10px; }
+.formulario-contacto {
+  background: url(../images/bg-formu.jpg);
+  color: #ffffff;
+  margin-top: 5px; }
 
 .blanco {
   font-family: "Roboto", sans-serif; }
@@ -484,7 +512,10 @@ footer {
   background: linear-gradient(180deg, #020024 0%, #0a0a49 100%, #00d4ff 100%); }
 
 .myself {
-  margin-top: 205px; }
+  margin-top: 222px; }
+
+.toptop {
+  margin-top: 30px; }
 
 .responsiveCateg {
   position: absolute;
@@ -584,7 +615,9 @@ footer {
   .bg-blue {
     width: 95%; }
   .btn-mailito {
-    width: 11% !important; } }
+    width: 11% !important; }
+  #busqueda {
+    width: 3px; } }
 
 @media (min-width: 1200px) {
   .hardware {
@@ -649,10 +682,16 @@ footer {
     width: 100%; }
   .responsiveCateg {
     margin-top: 110px; }
-  h4 {
+  .owl-h4 {
     margin-top: 90px; }
+  .h4-margin {
+    margin-top: 30px; }
   .footerDatos p {
-    font-size: 16px !important; } }
+    font-size: 16px !important; }
+  iframe {
+    max-width: 100%; }
+  #busqueda {
+    width: 185px !important; } }
 
 @media (max-width: 319px) {
   h5 {
@@ -661,7 +700,11 @@ footer {
     width: 100%; }
   .responsiveCateg {
     margin-top: 110px; }
-  h4 {
+  .owl-h4 {
     margin-top: 90px; }
+  .h4-margin {
+    margin-top: 50px; }
+  iframe {
+    max-width: 100%; }
   .footerDatos p {
     font-size: 16px; } }

@@ -52,203 +52,310 @@
 	</nav>
 </header>
 
-<!-- Categorías -->
+<!-- Categoria Responsive -->
 
-<div id="grilla">
-  <nav class="categoria">
-    <h2>Categorías</h2>
-    <form id="busqueda_categoria">
-      <div class="buscador_Categoria">
-        <input type="text" placeholder="Buscá tu producto..." id="busquedaCategoria">
-        <button type="submit" class="btn-categoria">Buscar</button>
-      </div>
-    </form>
-
-	  <div class="menu">
-	    <li class="menu-item" id="motherboards">
-	    <a href="#motherboards" class="btn">
-	      <i class="fas fa-database"></i>
-	      Motherboards
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">AMD AM4</a>
-	      <a href="#">INTEL 6MA / 7MA</a>
-	      <a href="#">INTEL 8VA / 9NA</a>
-	    </div>
-	  </li>
-	   <li class="menu-item" id="microprocesadores">
-	    <a href="#microprocesadores" class="btn">
-	      <i class="fas fa-microchip"></i>
-	      Microprocesadores
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">AMD</a>
-	      <a href="#">INTEL</a>
-	    </div>
-	  </li>
-	   <li class="menu-item" id="ram">
-	    <a href="#ram" class="btn">
-	      <i class="fas fa-memory"></i>
-	      Memoria RAM
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">RAM DDR3</a>
-	      <a href="#">RAM DDR4</a>
-	    </div>
-	  </li>
-	  <li class="menu-item" id="graphiccard">
-	    <a href="#graphiccard" class="btn">
-	      <i class="fas fa-gamepad"></i>
-	      Placas de Video
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">VGA ATI / AMD</a>
-	      <a href="#">VGA NVIDIA</a>
-	    </div>
-	  </li>
-	  <li class="menu-item" id="perifericos">
-	    <a href="#perifericos" class="btn">
-	      <i class="fas fa-headphones"></i>
-	      Perifericos
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">Mouse</a>
-	      <a href="#">Teclados</a>
-	      <a href="#">Auriculares</a>
-	    </div>
-	  </li>
-	  <li class="menu-item" id="gabyfuen">
-	    <a href="#gabyfuen" class="btn">
-	      <i class="fas fa-bolt"></i>
-	      Gabinetes y Fuentes
-	    </a>
-	    <div class="menu-item__sub">
-	      <a href="#">Fuentes</a>
-	      <a href="#">Gabinetes</a>
-	    </div>
-	  </li>
-	</div>
-  </nav>
-  <section id="productos" class="border">
-    <div class="bannerIntel">
-      <img src="../images/banner_intel.jpg">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12"> 
+      <nav class="responsiveCateg d-block d-lg-none d-xl-none">
+        <label for="btn" class="button"><i class="fas fa-store"></i> Productos
+          <span class="fas fa-caret-down"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul class="menu1">
+          <li>
+            <label for="btn-2" class="first"><i class="fas fa-database"></i> Motherboards</i>
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            <li><a href="#">AMD AM4</a></li>
+            <li><a href="#">INTEL 6MA/7MA</a></li>
+            <li><a href="#">INTEL 8VA/9NA</a></li>
+            </ul>
+           </li>
+          <li>
+            <label for="btn-3" class="second"><i class="fas fa-microchip"></i> Microprocesadores
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-3">
+            <ul>
+            <li><a href="#">AMD</a></li>
+            <li><a href="#">INTEL</a></li>
+            </ul>
+           </li>
+          <li>
+            <label for="btn-4" class="third"><i class="fas fa-memory"></i> Memoria RAM
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-4">
+            <ul>
+            <li><a href="#">RAM DDR3</a></li>
+            <li><a href="#">RAM DDR4</a></li>
+            </ul>
+           </li>
+          <li>
+            <label for="btn-7" class="fourth"><i class="fas fa-gamepad"></i> Placas de Video
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-7">
+            <ul>
+            <li><a href="#">VGA ATI/AMD</a></li>
+            <li><a href="#">VGA NVIDIA</a></li>
+            </ul>
+           </li>
+          <li>
+            <label for="btn-5" class="fifth"><i class="fas fa-headphones"></i> Perifericos
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-5">
+            <ul>
+            <li><a href="#">Mouse</a></li>
+            <li><a href="#">Teclados</a></li>
+            <li><a href="#">Auriculares</a></li>
+            <li><a href="#">Mousepads</a></li>
+            </ul>
+           </li>
+            <li>
+            <label for="btn-6" class="second"><i class="fas fa-bolt"></i> Gabinetes y Fuentes
+              <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn-6">
+            <ul>
+            <li><a href="#">Gabinetes</a></li>
+            <li><a href="#">Fuentes</a></li>        
+      </nav>
     </div>
-    <div class="productosIntel">
-      <div class="hardware">
-        <img src="../images/intel/pentiumintel.jpg"> Micro Intel Pentium G5400 DualCore 8va Gen S1151
-      </div>
-      <div class="hardware">
-        <img src="../images/intel/corei3.jpg">Micro Intel Core I3 8100 QuadCore 8va Gen S1151
-      </div>
-      <div class="hardware">
-        <img src="../images/intel/corei5.jpg">Micro Intel Core I5 9400F HexaCore 9va Gen S1151
-      </div>
-      <div class="hardware">
-        <img src="../images/intel/corei7.jpg">Micro Intel Core I7 10700 8 Núcleos / 16 Threads HT 4.8Ghz (10ma Gen) LGA1200
-      </div>
-      <div class="hardware">
-        <img src="../images/intel/corei9.jpg">Micro Intel Core I9 9900K OctaCore HT 9va Gen S1151
-      </div>
-      <div class="hardware">
-        <img src="../images/intel/combointel.jpg">Combo Actualización PC Intel Core I7 10700K + Z490 + Corsair 8Gb 3000Mhz + Fan
-      </div>
-    </div>
-  </section>
+  </div>
 </div>
-		
 
-<!-- footer -->
-<footer class="footerColumna">
-<div class="mailito">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col-sm-12 col-lg-12">
-					<form id="mailing" name="mailing" action="pages/thankyou.html">
-						<span class="blanco">
-							Recibí las mejores ofertas en tu e-mail
-						</span>
-			</div>			
-			<div class="col-sm-12 col-lg-12">
-							<input name="nombre" type="text" placeholder="Tu nombre" class="btn-mailito">
-							<input name="email" type="text" placeholder="Tu e-mail" class="btn-mailito">
-			</div>
-			<div class="col-sm-12 col-lg-12">
-							<input type="submit" name="Submit" value="Suscribite" class="btn-suscribite">
-			</div>				
-					</form>
+<!-- Categoria -->
+
+<div class="container">
+  	<div class="row">
+	    <div class="col-md-3 mt-20">
+	        <nav class="categoria">
+	          <h2 class="d-none d-lg-block" id="categ">Categorías</h2>
+	          <form id="busqueda_categoria">
+	            <div class="buscador_Categoria">
+	              <input type="text" placeholder="Buscá tu producto..." id="busquedaCategoria">
+	              <button type="submit" class="btn-categoria">Buscar</button>
+	            </div>
+	          </form>
+
+	          <div class="menu d-none d-sm-block d-md-none d-lg-block">
+	            <li class="menu-item" id="#/">
+	            <a href="#/" class="btn">
+	              <i class="fas fa-database"></i>
+	              Motherboards
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="">AMD AM4</a>
+	              <a href="">INTEL 6MA / 7MA</a>
+	              <a href="">INTEL 8VA / 9NA</a>
+	            </div>
+	          </li>
+	           <li class="menu-item" id="microprocesadores">
+	            <a href="#microprocesadores" class="btn">
+	              <i class="fas fa-microchip"></i>
+	              Microprocesadores
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="#">AMD</a>
+	              <a href="#">INTEL</a>
+	            </div>
+	          </li>
+	           <li class="menu-item" id="ram">
+	            <a href="#ram" class="btn">
+	              <i class="fas fa-memory"></i>
+	              Memoria RAM
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="#">RAM DDR3</a>
+	              <a href="#">RAM DDR4</a>
+	            </div>
+	          </li>
+	          <li class="menu-item" id="graphiccard">
+	            <a href="#graphiccard" class="btn">
+	              <i class="fas fa-gamepad"></i>
+	              Placas de Video
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="#">VGA ATI / AMD</a>
+	              <a href="#">VGA NVIDIA</a>
+	            </div>
+	          </li>
+	          <li class="menu-item" id="perifericos">
+	            <a href="#perifericos" class="btn">
+	              <i class="fas fa-headphones"></i>
+	              Perifericos
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="#">Mouse</a>
+	              <a href="#">Teclados</a>
+	              <a href="#">Auriculares</a>
+	              <a href="#">Mouse Pads</a>
+	            </div>
+	          </li>
+	          <li class="menu-item" id="gabyfuen">
+	            <a href="#gabyfuen" class="btn">
+	              <i class="fas fa-bolt"></i>
+	              Gabinetes y Fuentes
+	            </a>
+	            <div class="menu-item__sub">
+	              <a href="#">Gabinetes</a>
+	              <a href="#">Fuentes</a>
+	            </div>
+	          </li>
+	        </nav>  
+	    </div>
+     
+<!--PRODUCTOS -->
+
+	    <div class="col-md-9">
+		    <div class="col-12 mb-4 pb-4">
+		      <img src="../images/banner_intel.jpg" class="img-Responsive">
+		    </div>
+		    <div class="uno product text-center">
+		    	<div class="cuatro">
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/mother.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
 				</div>
-			</div>	
-		</div>	
-	</div>
+				<div class="cuatro">    
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/monitor.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
+				</div>
+				<div class="cuatro"> 				    
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/placa.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
+				</div>
+				<div class="cuatro"> 				    
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/auris.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
+				</div>
+				<div class="cuatro"> 				    
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/laptop.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
+				</div>
+				<div class="cuatro"> 				    
+				    <div class="col-md-4 col-sm-4 col-xs-6 hardware">
+				        <a href="#"><img src="../images/msi/micro.jpg"></a>
+				    </div>
+				    <p>Micro AMD Ryzen 9 3900XT - 12 Núcleos / 24 Threads 4.6Ghz AM4</p>
+				</div>
+		    </div>
+	    </div>
+  	</div>
+</div>      
+<div class="mailito">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-12 col-lg-12">
+          <form id="mailing" name="mailing" action="#">
+            <span class="blanco"><i class="fa fa-envelope"></i>
+              Recibí las mejores ofertas en tu e-mail
+            </span>     
+              <input name="nombre" type="text" placeholder="Tu nombre" class="btn-mailito">
+              <input name="email" type="text" placeholder="Tu e-mail" class="btn-mailito">
+              <input type="submit" name="Submit" value="Suscribite" class="btn-suscribite">
+      </div>        
+          </form>
+        </div>
+      </div>  
+    </div>  
+  </div>
 </div>
-<!-- INFO FOOTER -->
-<div class="flexgrid">
-	<div class="container-fluid">	
-		<div class="row">
-			<div class="col-sm-12 col-lg-4">
-					<div class=footerDatos>
-						<h4>
-						<b>Informacion</b>
-						</h4>
-						<p>Podes retirar tus productos en nuestra sucursal <b>DEVOTO</b>
-						<p>¿Dónde?</p>
-						<p>Campana 3500</p>
-						<p>(011) 3844-6545</p>
-						<p>Menú</p>
-						<a href="../index.html"><p>Inicio</p></a>
-						<a href="../pages/tienda.html"><p>Tienda</p></a>
-						<a href="../pages/quienessomos.html"><p>Quiénes Somos</p></a>
-						<a href="../pages/faq.html"><p>FAQ</p></a>
-						<a href="../pages/contacto.html"><p>Contacto y Sucursales</p></a>
-						<a href="../pages/politicasdeprivacidad.html"><p>Políticas de privacidad</p></a>
-					</div>
-			</div>
-			<div class="col-sm-12 col-lg-4">
-					<div class="footerDatos">
-						<h4>
-						<b>Nosotros</b>
-						</h4>
-						<p>En Geneb buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita</p>
-						<img src="../images/data-fiscal.gif">
-					</div>
-						
-			</div>
-			<div class="col-sm-12 col-lg-4">
-					<div class="footerDatos">
-						<h4>
-						<b>Contactate</b>
-						</h4>
-						<p>
-						<b>Email: </b> 
-						venta@geneb.com.ar
-						</p>
-						<p>
-						<b>Atención telefónica: </b>
-						(011) 1122-5544
-						</p>
-						<p>
-						<b>Whatsapp: </b>
-						+54 9 1155-4422
-						</p>
-						<p>
-						<b>Envios: </b>
-						envios@geneb.com.ar
-						</p>
-						<p>
-						<b>Soporte: </b>
-						rma@geneb.com.ar
-						</p>
-						<a href="https://www.facebook.com/CoderHouse/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a href="https://www.instagram.com/CoderHouse/" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href="https://api.whatsapp.com/send?phone=5491126250151&text=Hola%20CoderHouse%E2%98%BA.%20Quiero%20inscribirme%20en%20el%20curso%20de%20Desarrollo%20Web!%20%C2%BFC%C3%B3mo%20hago%20para%20ser%20parte?%20Saludos%20%F0%9F%91%8B." target="_blank"><i class="fab fa-whatsapp"></i></a>
-					</div>
-			</div>
-		</div>		
-	</div>
-</div>	
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class=footerDatos>
+              <h5>
+              <b>Informacion</b>
+              </h5>
+              <p>Podes retirar tus productos en nuestra sucursal <b>DEVOTO</b>
+              <p>¿Dónde?</p>
+              <p><i class="fas fa-home"></i> Campana 3500</p>
+              <p><i class="fas fa-phone-volume"></i> (011) 3844-6545</p>
+              <p><strong>Menú</strong></p>
+              <a href="../index.html"><p>Inicio</p></a>
+              <a href="../pages/tienda.html"><p>Tienda</p></a>
+              <a href="../pages/quienessomos.html"><p>Quiénes Somos</p></a>
+              <a href="../pages/faq.html"><p>FAQ</p></a>
+              <a href="../pages/contacto.html"><p>Contacto y Sucursales</p></a>
+              <a href="../pages/politicasdeprivacidad.html"><p>Políticas de privacidad</p></a>
+              <p><strong>2020 © Todos los derechos reservados</strong></p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="footerDatos">
+              <h5>
+              <b>Nosotros</b>
+              </h5>
+              <p>En Geneb buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita</p>
+              <a href="https://www.coderhouse.com/" target="_blank"><img src="../images/data-fiscal.gif"></a>
+            </div>
+              
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="footerDatos">
+              <h5>
+              <b>Contactate</b>
+              </h5>
+              <p>
+              <b>Email: </b> 
+              venta@geneb.com.ar
+              </p>
+              <p>
+              <b>Atención telefónica: </b>
+              (011) 1122-5544
+              </p>
+              <p>
+              <b>Whatsapp: </b>
+              +54 9 1155-4422
+              </p>
+              <p>
+              <b>Envios: </b>
+              envios@geneb.com.ar
+              </p>
+              <p>
+              <b>Soporte: </b>
+              rma@geneb.com.ar
+              </p>
+              <a href="https://www.facebook.com/CoderHouse/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/CoderHouse/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=5491126250151&text=Hola%20CoderHouse%E2%98%BA.%20Quiero%20inscribirme%20en%20el%20curso%20de%20Desarrollo%20Web!%20%C2%BFC%C3%B3mo%20hago%20para%20ser%20parte?%20Saludos%20%F0%9F%91%8B." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  <div class="myself">
+                    <a href="https://genebson.github.io/portfolio/" target="_blank"><p>By <strong>Jorge Mauricio Genebrieres</strong></p></a>
+                  </div>    
+            </div>
+        </div> 
+      </div>    
+    </div>
 </footer>
+
+<!-- JS -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/carouselproductos.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/preventscroll.js"></script>
 </body>
 </html>
