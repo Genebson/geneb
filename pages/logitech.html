@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" href="../images/favicon.png"/>
 	<title>Logitech - GENEB</title>
 </head>
@@ -49,6 +48,18 @@
 				</li>
 			</ul>
 		</div>
+	    <div id="myNav" class="overlay">
+	      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	      <div class="overlay-content">
+	        <a href="../index.html">Inicio</a>  
+	        <a href="../pages/tienda.html">Tienda</a>
+	        <a href="../pages/quienessomos.html">Quiénes Somos</a>
+	        <a href="../pages/faq.html">FAQ</a>
+	        <a href="../pages/contacto.html">Contacto y Sucursales</a>
+	        <a href="../pages/politicasdeprivacidad.html">Políticas de Privacidad</a>    
+	      </div>
+	    </div>
+	    <span class="d-none d-lg-block d-xl-block rere" onclick="openNav()">&#9776;</span>		
 	</nav>
 </header>
 
@@ -356,5 +367,6 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/carouselproductos.js"></script>
 <script src="../js/dropdown.js"></script>
+<script src="../js/sections.js"></script>
 </body>
 </html>

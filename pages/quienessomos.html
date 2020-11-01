@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" href="../images/favicon.png"/>
 	<title>¿Quiénes somos? - GENEB</title>
 </head>
@@ -48,6 +47,18 @@
 				</li>
 			</ul>
 		</div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../index.html">Inicio</a>  
+        <a href="../pages/tienda.html">Tienda</a>
+        <a href="../pages/quienessomos.html">Quiénes Somos</a>
+        <a href="../pages/faq.html">FAQ</a>
+        <a href="../pages/contacto.html">Contacto y Sucursales</a>
+        <a href="../pages/politicasdeprivacidad.html">Políticas de Privacidad</a>    
+      </div>
+    </div>
+    <span class="d-none d-lg-block d-xl-block rere" onclick="openNav()">&#9776;</span>    
 	</nav>
 </header>
 <div><img class="sliderPrincipal" src="../images/quienessomos.png"></div>
@@ -56,7 +67,7 @@
         <h1 class="section-title tituloEnTienda">Historia de la empresa</h1>
         <div class="row mt-20">
             <div class="col-md-8">
-                <p><big>Geneb SRL inició sus actividades en el año 2009, fundada por un joven emprendedor argentino.</big>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <p class="paddingPs"><big>Geneb SRL inició sus actividades en el año 2009, fundada por un joven emprendedor argentino.</big>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </div>
              <div class="col-md-4">
                 <img src="../images/genebcompu.png" class="img-responsive">
@@ -67,7 +78,7 @@
                 <img src="../images/genebcompu.png" class="img-responsive">
             </div>
             <div class="top col-md-8">
-                <p><big><i>En el año 2013 dio su paso más grande</i></big> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                <p class="paddingPs"><big><i>En el año 2013 dio su paso más grande</i></big> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
@@ -174,5 +185,6 @@
 <script src="../js/carouselproductos.js"></script>
 <script src="../js/dropdown.js"></script>
 <script src="../js/preventscroll.js"></script>
+<script src="../js/sections.js"></script>
 </body>
 </html>
