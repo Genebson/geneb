@@ -34,6 +34,11 @@ $background_color_4: #0e3b72;
 /*Footer*/
 /* Clear floats after the columns */
 /*BLOCK+ELEMENTS*/
+
+.tituloEnTienda {
+	margin-top: 1em;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -202,7 +207,8 @@ h1 {
 	font-size: 40px;
 }
 .h1-margin {
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
+	margin-top: 0.9em;
 }
 h2 {
 	color: $color_5;
