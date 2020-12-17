@@ -476,6 +476,39 @@ section#productos {
   .menu-item:target .menu-item__sub {
     max-height: 20em; }
 
+.btn-shop {
+  background: #0099DD;
+  color: #FFF;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  /* width: 110px; */
+  outline: none;
+}
+
+.btn-detalle {
+  background: orange;
+  color: #FFF;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  /* width: 110px; */
+  outline: none;
+}
+
+
+.price {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.productName {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 .btn {
   display: block;
   padding: 1rem 1.2rem;
