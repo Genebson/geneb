@@ -62,6 +62,30 @@
 					</li>
 				</ul>
 			</div>
+			<div class="two columns u-pull-right">
+				<ul>
+					<li class="submenu">
+						<i class="fas fa-shopping-cart" id="img-carrito"></i>
+						<div id="carrito">
+
+							<table id="lista-carrito" class="u-full-width">
+								<thead>
+									<tr>
+										<th>Imagen</th>
+										<th>Nombre</th>
+										<th>Precio</th>
+										<th>Cantidad</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+
+							<a href="#" id="vaciar-carrito" class="button-shop u-full-width">Vaciar Carrito</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 			<div id="myNav" class="overlay">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="overlay-content">
@@ -241,14 +265,14 @@
 				<div class="col-12 mb-4 pb-4">
 					<img src="../images/banner_msi.jpg" class="img-Responsive">
 				</div>
-				<div class="uno product text-center">
+				<div class="uno product text-center" id="lista-productos">
 					<div class="cuatro">
 						<div class="col-md-4 col-sm-4 col-xs-6 hardware">
 							<a href="#"><img src="../images/msi/mother1.jpg" class="size-imgs"></a>
 						</div>
 						<p class="productName">Mother ASUS PRIME Z390-A (8va/9na Gen) S1151</p>
 						<h4 class="price">$31999</h4>
-						<button type="button" class="btn-shop" id="1">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="1">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-1">Detalles</button>
 					</div>
 					<div class="cuatro">
@@ -257,7 +281,7 @@
 						</div>
 						<p class="productName">Monitor Gamer ASUS VP249QGR 24 144Hz</p>
 						<h4 class="price">$49999</h4>
-						<button type="button" class="btn-shop" id="2">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="2">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-2">Detalles</button>
 					</div>
 					<div class="cuatro">
@@ -266,7 +290,7 @@
 						</div>
 						<p class="productName">Placa de Video MSI Radeon RX5700 8Gb GDDR6</p>
 						<h4 class="price">$49999</h4>
-						<button type="button" class="btn-shop" id="3">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="3">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-3">Detalles</button>
 					</div>
 					<div class="cuatro">
@@ -275,7 +299,7 @@
 						</div>
 						<p class="productName">Auriculares Logitech G233 Gaming Prodigy 3.5mm</p>
 						<h4 class="price">$10799</h4>
-						<button type="button" class="btn-shop" id="4">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="4">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-4">Detalles</button>
 					</div>
 					<div class="cuatro">
@@ -284,7 +308,7 @@
 						</div>
 						<p class="productName">Micro Intel Core I7 9700F OctaCore HT 9va Gen</p>
 						<h4 class="price">$35999</h4>
-						<button type="button" class="btn-shop" id="5">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="5">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-5">Detalles</button>
 					</div>
 					<div class="cuatro">
@@ -293,7 +317,7 @@
 						</div>
 						<p class="productName">Micro AMD Ryzen 9 3900XT 12 Núcleos 4.6Ghz</p>
 						<h4 class="price">$58999</h4>
-						<button type="button" class="btn-shop" id="6">Comprar!</button>
+						<button type="button" class="btn-shop" data-id="6">Comprar!</button>
 						<button type="button" class="btn-detalle" id="detalle-6">Detalles</button>
 					</div>
 				</div>

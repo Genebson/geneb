@@ -1,18 +1,47 @@
-const $motherboard = document.querySelector('#1');
-const $monitor = document.querySelector('#2');
-const $placadevideo = document.querySelector('#3');
-const $auriculares = document.querySelector('#4');
-const $microprocesador = document.querySelector('#5');
-const microprocesador1 = document.querySelector('#6');
+// const $motherboard = document.querySelector('#1');
+// const $monitor = document.querySelector('#2');
+// const $placadevideo = document.querySelector('#3');
+// const $auriculares = document.querySelector('#4');
+// const $microprocesador = document.querySelector('#5');
+// const microprocesador1 = document.querySelector('#6');
 
-const $detalleMotherboard = document.querySelector('#1');
-const $detalleMonitor = document.querySelector('#2');
-const $detallePlacaDeVideo = document.querySelector('#3');
-const $detalleAuriculares = document.querySelector('#4');
-const $detalleMicroprocesador = document.querySelector('#5');
-const $detalleMicroprocesador1 = document.querySelector('#6');
+const carrito = document.querySelector('#carrito');
+const contenedorCarrito = document.querySelector('#lista-carrito tbody');
+const listaProductos = document.querySelector('#lista-productos');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
+let arrayCarrito = [];
 
-let carrito = []
+// const $detalleMotherboard = document.querySelector('#1');
+// const $detalleMonitor = document.querySelector('#2');
+// const $detallePlacaDeVideo = document.querySelector('#3');
+// const $detalleAuriculares = document.querySelector('#4');
+// const $detalleMicroprocesador = document.querySelector('#5');
+// const $detalleMicroprocesador1 = document.querySelector('#6');
+
+listaProductos.addEventListener('click', agregarProductos);
+
+function agregarProductos(e) {
+  // Para que no empuje la página hacia arriba
+  e.preventDefault();
+  if (e.target.classList.contains("btn-shop")) {
+    console.log('Agregar al carrito')
+  }
+}
+
+
+function obtenerDatosDelProducto(productos) {
+  const productoSeleccionado = {
+    imagen: productos.querySelector('.size-imgs').src,
+    nombre: productos.querySelector('.productName').textContent,
+    valor: productos.querySelector('.price').textContent,
+    id: productos.querySelector('button').getAttribute('data-id'),
+    cantidad: 1
+  }
+
+
+
+}
+
 
 let motherboard = {
   nombre: 'Mother ASUS PRIME Z390-A (8va/9na Gen) S1151',
