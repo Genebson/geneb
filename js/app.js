@@ -21,16 +21,20 @@ let arrayCarrito = [];
 listaProductos.addEventListener('click', agregarProductos);
 
 function agregarProductos(e) {
-  // Para que no empuje la página hacia arriba
   e.preventDefault();
   if (e.target.classList.contains("btn-shop")) {
-    console.log('Agregar al carrito')
+    // Selecciono el card del producto sobre el que se hizo click
+    const productoSeleccionado = (e.target.parentElement)
+    // console.log(productoSeleccionado);
+    obtenerDatosDelProducto(productoSeleccionado);
   }
 }
 
 
 function obtenerDatosDelProducto(productos) {
-  const productoSeleccionado = {
+  // Extraer información del producto seleccionado
+
+  const datosDelProducto = {
     imagen: productos.querySelector('.size-imgs').src,
     nombre: productos.querySelector('.productName').textContent,
     valor: productos.querySelector('.price').textContent,
@@ -38,10 +42,45 @@ function obtenerDatosDelProducto(productos) {
     cantidad: 1
   }
 
+  // Agregar el producto al carrito
 
+  // arrayCarrito = []
+  arrayCarrito.push(datosDelProducto)
 
+  insertarProducto();
+
+  // console.log(arrayCarrito);
 }
 
+// Insertar producto en el HTML
+
+function insertarProducto() {
+  arrayCarrito.forEach(producto => {
+    // Destructuring sobre el objeto producto
+    const { nombre, imagen, valor, cantidad, id } = producto;
+
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>
+        <img src="${imagen}" width=100>
+      </td>
+      <td>
+        ${nombre}
+      </td>
+      <td>
+        ${valor}
+      </td>
+      <td>
+        ${cantidad}
+      </td>
+      <td>
+        <a href="#" class="borrar-producto" data-id="${id}">X</a>
+      </td>  
+    `
+    contenedorCarrito.appendChild(row);
+  });
+
+}
 
 let motherboard = {
   nombre: 'Mother ASUS PRIME Z390-A (8va/9na Gen) S1151',
@@ -85,4 +124,4 @@ let microprocesador1 = {
   valor: 58999
 }
 
-carrito.push(motherboard, monitor, placadevideo, auriculares, microprocesador, microprocesador1)
+// arrayCarrito.push(motherboard, monitor, placadevideo, auriculares, microprocesador, microprocesador1)
