@@ -42,10 +42,29 @@ function obtenerDatosDelProducto(productos) {
     cantidad: 1
   }
 
+  // Sumar cantidad de productos que selecciona el usuario
+
+  const existe = arrayCarrito.some(productos => productos.id === datosDelProducto.id)
+
+  if (existe) {
+    const producto = arrayCarrito.map(productos => {
+      if (productos.id === datosDelProducto.id) {
+        productos.cantidad++;
+        productos.valor = Number(datosDelProducto.valor.slice(1)) * productos.cantidad;
+        return productos;
+      } else {
+        return productos;
+      }
+    })
+    arrayCarrito = [...producto];
+  } else {
+    arrayCarrito.push(datosDelProducto)
+  }
+
   // Agregar el producto al carrito
 
-  // arrayCarrito = []
-  arrayCarrito.push(datosDelProducto)
+  // arrayCarrito = [...arrayCarrito, productoAgregado];
+  // arrayCarrito.push(datosDelProducto)
 
   insertarProducto();
 
@@ -55,6 +74,9 @@ function obtenerDatosDelProducto(productos) {
 // Insertar producto en el HTML
 
 function insertarProducto() {
+
+  borrarHTML();
+
   arrayCarrito.forEach(producto => {
     // Destructuring sobre el objeto producto
     const { nombre, imagen, valor, cantidad, id } = producto;
@@ -79,7 +101,18 @@ function insertarProducto() {
     `
     contenedorCarrito.appendChild(row);
   });
+  guardarStorage()
+}
 
+function guardarStorage() {
+  localStorage.setItem('carrito', JSON.stringify(arrayCarrito));
+}
+
+function borrarHTML() {
+  // contenedorCarrito.innerHTML = '';
+  while (contenedorCarrito.firstChild) {
+    contenedorCarrito.removeChild(contenedorCarrito.firstChild)
+  }
 }
 
 let motherboard = {
