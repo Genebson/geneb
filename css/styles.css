@@ -66,6 +66,12 @@
     top: 15px;
     right: 35px; } }
 
+.no-bottom {
+  margin-bottom: 0px;
+}
+.no-bottom1 {
+  margin-bottom: 20px;
+}
 .rere {
   float: right;
   color: white;
@@ -566,10 +572,19 @@ section#productos {
   outline: none;
 }
 
+.btn1 {
+  background: #6c757d;
+  border: 1px solid transparent;
+  color: white;
+  padding: 0.5rem;
+  width: 30%;
+  border-radius: 5px;
+}
 
 .price {
   letter-spacing: 1px;
   margin-bottom: 15px;
+  border-radius: ;
 }
 
 .productName {
