@@ -359,7 +359,7 @@ btn-posi {
 .fa-shopping-cart {
   color: white;
   /* background-color: white; */
-  padding: 10px 50px;
+  /* padding: 10px 50px; */
 }
 .u-pull-right {
   float: right; }
@@ -555,7 +555,7 @@ section#productos {
   color: #FFF;
   border-radius: 30px;
   border: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin-bottom: 15px;
   /* width: 110px; */
   outline: none;
@@ -584,7 +584,6 @@ section#productos {
 .price {
   letter-spacing: 1px;
   margin-bottom: 15px;
-  border-radius: ;
 }
 
 .productName {

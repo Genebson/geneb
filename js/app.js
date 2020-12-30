@@ -8,7 +8,7 @@
 const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const listaProductos = document.querySelector('#lista-productos');
-const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
+const vaciarCarrito = document.querySelector('#vaciar-carrito');
 let arrayCarrito = [];
 
 // const $detalleMotherboard = document.querySelector('#1');
@@ -19,6 +19,20 @@ let arrayCarrito = [];
 // const $detalleMicroprocesador1 = document.querySelector('#6');
 
 listaProductos.addEventListener('click', agregarProductos);
+carrito.addEventListener('click', eliminarProducto);
+vaciarCarrito.addEventListener('click', vaciarProductos);
+
+document.addEventListener('DOMContentLoaded', () => {
+  arrayCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+  insertarProducto();
+})
+
+function vaciarProductos() {
+  borrarHTML()
+  arrayCarrito = [];
+  guardarStorage();
+}
 
 function agregarProductos(e) {
   e.preventDefault();
@@ -30,6 +44,14 @@ function agregarProductos(e) {
   }
 }
 
+function eliminarProducto(e) {
+  if (e.target.classList.contains('borrar-producto')) {
+    const productoId = e.target.getAttribute('data-id');
+    arrayCarrito = arrayCarrito.filter(productos => productos.id !== productoId);
+    insertarProducto();
+    guardarStorage();
+  }
+}
 
 function obtenerDatosDelProducto(productos) {
   // Extraer información del producto seleccionado
@@ -50,7 +72,7 @@ function obtenerDatosDelProducto(productos) {
     const producto = arrayCarrito.map(productos => {
       if (productos.id === datosDelProducto.id) {
         productos.cantidad++;
-        productos.valor = Number(datosDelProducto.valor.slice(1)) * productos.cantidad;
+        productos.valor = `$${Number(datosDelProducto.valor.slice(1)) * productos.cantidad}`;
         return productos;
       } else {
         return productos;
@@ -96,7 +118,7 @@ function insertarProducto() {
         ${cantidad}
       </td>
       <td>
-        <a href="#" class="borrar-producto" data-id="${id}">X</a>
+        <a href="#" class="borrar-producto" data-id="${id}"> X </a>
       </td>  
     `
     contenedorCarrito.appendChild(row);
