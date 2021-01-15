@@ -64,7 +64,7 @@
       <div class="two columns u-pull-right">
         <ul>
           <li class="submenu">
-            <i class="fas fa-shopping-cart" id="img-carrito"></i>
+            <i class="fas fa-shopping-bag" id="img-carrito"></i>
             <div id="carrito">
 
               <table id="lista-carrito" class="u-full-width">
@@ -81,41 +81,87 @@
               </table>
 
               <a href="#" id="vaciar-carrito" class="button-shop u-full-width">Vaciar Carrito</a>
+              <a href="#" id="continuar-comprar" class="button-shop u-full-width">Continuar Compra</a>
             </div>
           </li>
         </ul>
       </div>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/tienda.html">Tienda</a>
-          <a href="../pages/quienessomos.html">Quiénes Somos</a>
-          <a href="../pages/faq.html">FAQ</a>
-          <a href="../pages/contacto.html">Contacto y Sucursales</a>
-          <a href="../pages/politicasdeprivacidad.html">Políticas de Privacidad</a>
-        </div>
-      </div>
-      <span class="d-none d-lg-block d-xl-block rere" onclick="openNav()">&#9776;</span>
+      <!-- <div id="myNav" class="overlay">
+      				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      				<div class="overlay-content">
+      					<a href="../index.html">Inicio</a>
+      					<a href="../pages/tienda.html">Tienda</a>
+      					<a href="../pages/quienessomos.html">Quiénes Somos</a>
+      					<a href="../pages/faq.html">FAQ</a>
+      					<a href="../pages/contacto.html">Contacto y Sucursales</a>
+      					<a href="../pages/politicasdeprivacidad.html">Políticas de Privacidad</a>
+      				</div>
+      			</div>
+      			<span class="d-none d-lg-block d-xl-block rere" onclick="openNav()">&#9776;</span> -->
     </nav>
   </header>
 
   <div class="container">
     <div class="row">
       <div class="col-md-3 mt-20">
-        <h1 class="section-title mi_cuenta"><i class="fa fa-shopping-cart"></i>&nbsp;Mi Compra</h1>
-        <div class="widget oculto-movil">
-          <ul class="categories">
-            <li class="active"><a href="#"><i class="fa fa-list-alt"></i>&nbsp;Mis productos</a></li>
-            <li><a href="#" class="continuar"><i class="fa fa-truck"></i>&nbsp;Mi entrega</a></li>
-            <li><a href="#" class="continuar"><i class="fa fa-dollar-sign"></i>&nbsp;Mi forma de pago</a></li>
-            <li><a href="#" class="continuar"><i class="fa fa-check-square"></i>&nbsp;Mi Resumen</a></li>
-          </ul>
-        </div>
+        <!-- <div class="col-md-3 mt-20">
+          <h1 class="section-title mi_cuenta"><i class="fa fa-shopping-cart"></i>&nbsp;Mi Compra</h1>
+          <div class="widget oculto-movil">
+            <ul class="categories">
+              <li class="active"><a href="#"><i class="fa fa-list-alt"></i>&nbsp;Mis productos</a></li>
+              <li><a href="#" class="continuar"><i class="fa fa-truck"></i>&nbsp;Mi entrega</a></li>
+              <li><a href="#" class="continuar"><i class="fa fa-dollar-sign"></i>&nbsp;Mi forma de pago</a></li>
+              <li><a href="#" class="continuar"><i class="fa fa-check-square"></i>&nbsp;Mi Resumen</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <nav class="categoria">
+          <h2 class="d-none d-lg-block" id="categ"><i class="fas fa-shopping-basket"></i> Mi compra</h2>
+          <div class="menu d-none d-sm-block d-md-none d-lg-block">
+            <li class="menu-item" id="mis-productos">
+              <a href="#" class="btn" id="mi-producto">
+                <i class="fa fa-list-alt"></i>
+                Mis productos
+              </a>
+            </li>
+            <li class="menu-item" id="mi-entrega">
+              <a href="#" class="btn">
+                <i class="fa fa-truck"></i>
+                Mi entrega
+              </a>
+            </li>
+            <li class="menu-item" id="ram">
+              <a href="#ram" class="btn">
+                <i class="fa fa-dollar-sign"></i>
+                Mi forma de pago
+              </a>
+            </li>
+            <li class="menu-item" id="graphiccard">
+              <a href="#graphiccard" class="btn">
+                <i class="fa fa-check-square"></i>
+                Mi Resumen
+              </a>
+            </li>
+        </nav>
       </div>
     </div>
   </div>
-
+  <div class="mailito">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12 col-lg-12">
+          <form id="mailing" name="mailing" action="#">
+            <span class="blanco"><i class="fa fa-envelope"></i>
+              Recibí las mejores ofertas en tu e-mail
+            </span>
+            <input name="nombre" type="text" placeholder="Tu nombre" class="btn-mailito">
+            <input name="email" type="text" placeholder="Tu e-mail" class="btn-mailito">
+            <input type="submit" name="Submit" value="Suscribite" class="btn-suscribite">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="row">
@@ -205,9 +251,11 @@
   <!-- JS -->
 
   <script src="../js/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  		crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>

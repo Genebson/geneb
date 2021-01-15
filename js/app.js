@@ -9,6 +9,7 @@ const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const listaProductos = document.querySelector('#lista-productos');
 const vaciarCarrito = document.querySelector('#vaciar-carrito');
+const $continuarCompra = document.querySelector('#continuar-compra');
 let arrayCarrito = [];
 
 // const $detalleMotherboard = document.querySelector('#1');
@@ -118,7 +119,7 @@ function insertarProducto() {
         ${cantidad}
       </td>
       <td>
-        <a href="#" class="borrar-producto" data-id="${id}"> X </a>
+        <a href="#" class="borrar-producto" data-id="${id}"><i class="fas fa-trash"></i></a>
       </td>  
     `
     contenedorCarrito.appendChild(row);
@@ -143,7 +144,7 @@ $(function () {
   $.ajax({
     url: 'https://my-json-server.typicode.com/Genebson/geneb/db',
     success: function (data) {
-      console.log(data)
+      // console.log(data)
     },
     error: function (xhr, status, error) {
       // console.log(xhr)
@@ -152,3 +153,8 @@ $(function () {
     }
   })
 })
+
+$continuarCompra.onclick = function () {
+  location.href = "C:/Users/Mauri/Desktop/Coderhouse/geneb/pages/mi-compra.html"
+}
+

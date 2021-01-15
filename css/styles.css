@@ -355,15 +355,20 @@ btn-posi {
   color: green;
   font-size: 100px;
   margin-bottom: 50px; }
-
+.fa-shopping-bag {
+  color: white;
+  background-color: #2c85bc;
+  padding: 5px 10px;
+  font-size: 30px;
+}
 .fa-shopping-cart {
   color: white;
+  /* font-size: 25px;
+  margin-right: 50px; */
   /* background-color: white; */
   /* padding: 10px 50px; */
 }
-.u-pull-right {
-  float: right; }
-  .two.columns                    { width: 13.3333333333%; }
+
 a.back-index {
   text-decoration: none; }
 
@@ -501,30 +506,41 @@ section#productos {
   cursor: pointer;
   box-sizing: border-box;
 }
-
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
 
 .submenu {
+  list-style-type: none;
     position: relative;
-    background-color: black;
-    width: 45%;
+    /* background-color: black;
+    width: 45%; */
 }
 
 .submenu #carrito{
     display: none;
+}
+.fa-trash {
+}
+.borrar-producto {
+  background-color: #c9302c;
+  border-color: #ac2925;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5px 10px 5px 10px;
 }
 .submenu:hover #carrito{
     display: block;
     position: absolute;
     right:0;
     top:100%;
-    z-index: 1;
+    z-index: 9999;
     background-color: white;
     padding: 20px;
     min-height: 400px;
-    min-width: 300px;
+    min-width: 800px;
 }
 
 :root {
